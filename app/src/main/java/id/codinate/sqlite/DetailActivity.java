@@ -26,7 +26,7 @@ public class DetailActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarc);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -38,7 +38,7 @@ public class DetailActivity extends AppCompatActivity {
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        txtName = (TextView) findViewById(R.id.txt_name);
+        txtName = (TextView) findViewById(R.id.txt_nama);
         txtType = (TextView) findViewById(R.id.txt_type);
         txtAlamat = (TextView) findViewById(R.id.txt_alamat);
         txtPosisi = (TextView) findViewById(R.id.txt_posisi);

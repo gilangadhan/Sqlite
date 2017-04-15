@@ -25,7 +25,7 @@ public class FormActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbarb);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -38,7 +38,7 @@ public class FormActivity extends AppCompatActivity {
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         spnType = (Spinner) findViewById(R.id.spn_type);
-        edtName = (EditText) findViewById(R.id.edt_name);
+        edtName = (EditText) findViewById(R.id.edt_nama);
         edtPosisi = (EditText) findViewById(R.id.edt_posisi);
         edtAlamat = (EditText) findViewById(R.id.edt_alamat);
 
@@ -51,7 +51,7 @@ public class FormActivity extends AppCompatActivity {
         spnType.setAdapter(adapter);
 
     }
-    public void saveTransaction(View view){
+    public void TambahAnggota(View view){
         String name = edtName.getText().toString();
         int type = spnType.getSelectedItemPosition()+1;
         String posisi = edtPosisi.getText().toString();
