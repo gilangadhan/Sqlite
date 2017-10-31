@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 2017. Gilang Ramadhan (gilangramadhan96.gr@gmail.com)
  */
-
+//
 package id.codinate.sqlite;
 
 import android.content.Intent;
